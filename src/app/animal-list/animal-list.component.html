@@ -1,0 +1,10 @@
+<h2> *ngFor </h2>
+
+<ul>
+  <li *ngFor="let x = index, let oneAnimal of listOfAnimals">
+    <h3> {{ oneAnimal.name }} </h3>
+    <p> ID: {{ oneAnimal.id }} </p>
+    <p> Position {{ x }} in the array </p>
+    <img [src]="oneAnimal.imageUrl" />
+  </li>
+</ul>
